@@ -1,1 +1,245 @@
-/*# sourceMappingURL=style.css.map */
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+li,
+ol {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-style: inherit;
+}
+
+html,
+body {
+  height: 100%;
+  font-size: 14px;
+  font-weight: 300;
+  color: #9c9c9c;
+  background-color: #0D0D11;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: clip;
+}
+
+main {
+  flex: 1 1 auto;
+}
+
+[class*=__container] {
+  max-width: 1310px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+@media (max-width: 600px) {
+  [class*=__container] {
+    padding: 0 10px;
+  }
+}
+
+.button {
+  background: #3D96F4;
+  border-radius: 50px;
+  padding: 16px 30px;
+}
+
+.header {
+  padding: 10px 0;
+}
+.header__container {
+  display: flex;
+  -moz-column-gap: 36px;
+       column-gap: 36px;
+  row-gap: 10px;
+  align-items: center;
+  justify-content: center;
+  min-height: 116px;
+}
+@media (max-width: 500px) {
+  .header__container {
+    -moz-column-gap: 15px;
+         column-gap: 15px;
+  }
+}
+@media (max-width: 380px) {
+  .header__container {
+    -moz-column-gap: 4px;
+         column-gap: 4px;
+  }
+}
+.header__logo {
+  align-self: center;
+}
+@media (max-width: 580px) {
+  .header__logo {
+    max-width: 40px;
+    overflow: hidden;
+  }
+}
+.header__menu {
+  flex: 1 1 auto;
+}
+.header__item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  -moz-column-gap: 36px;
+       column-gap: 36px;
+  row-gap: 5px;
+  flex-wrap: wrap;
+}
+@media (max-width: 800px) {
+  .header__item {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  .header__item.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 120px;
+    left: 35%;
+    transition: all ease 0.7s;
+  }
+}
+@media (max-width: 500px) {
+  .header__item.active {
+    justify-content: center;
+    -moz-column-gap: 5px;
+         column-gap: 5px;
+  }
+}
+.header__link {
+  font-size: 16px;
+  line-height: 160%;
+  color: #FFFFFF;
+}
+@media (max-width: 800px) {
+  .header__link {
+    font-size: 38px;
+  }
+}
+.header__cart {
+  display: flex;
+  font-size: 17.6px;
+  line-height: 160%;
+  color: #FFFFFF;
+  display: flex;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+  position: relative;
+}
+@media (max-width: 800px) {
+  .header__cart {
+    background: url("../img/header/cart.svg") 0px 0px no-repeat;
+    flex: 0 1 60px;
+    height: 60px;
+    -moz-column-gap: 0px;
+         column-gap: 0px;
+  }
+}
+@media (max-width: 800px) {
+  .header__text {
+    display: none;
+  }
+}
+.header__count {
+  height: 30px;
+  width: 30px;
+  left: 61.05%;
+  right: 0%;
+  top: calc(50% - 15px);
+  background: rgba(129, 129, 139, 0.3);
+  border-radius: 29.9375px;
+  text-align: center;
+}
+@media (max-width: 800px) {
+  .header__count {
+    position: absolute;
+    top: 16px;
+    left: 15px;
+    width: 30px;
+    height: 30px;
+  }
+}
+.header__button {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 160%;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+  display: flex;
+}
+
+.hamburger-icon {
+  display: none;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  position: relative;
+}
+@media (max-width: 800px) {
+  .hamburger-icon {
+    display: flex;
+  }
+}
+.hamburger-icon .stroke {
+  width: 30px;
+  height: 1px;
+  background-color: white;
+  position: absolute;
+  transition: all 0.2s ease;
+}
+.hamburger-icon .stroke:first-child {
+  top: 23%;
+  transform: translateY(0%);
+}
+.hamburger-icon .stroke:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 1;
+}
+.hamburger-icon .stroke:last-child {
+  top: 100%;
+  transform: translateY(-2.1875rem);
+}
+.hamburger-icon .stroke.active {
+  top: 50%;
+}
+.hamburger-icon .stroke.active:first-child {
+  transform: translateY(-50%) rotate(45deg);
+}
+.hamburger-icon .stroke.active:nth-child(2) {
+  opacity: 0;
+}
+.hamburger-icon .stroke.active:last-child {
+  transform: translateY(-50%) rotate(135deg);
+}/*# sourceMappingURL=style.css.map */
