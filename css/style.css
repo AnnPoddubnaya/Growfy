@@ -507,16 +507,6 @@ main {
   line-height: 120%;
 }
 
-.text {
-  font-size: 18px;
-  line-height: 150%;
-  display: flex;
-  align-items: center;
-  color: #9C9C9C;
-  padding-top: 12px;
-  padding-bottom: 33px;
-}
-
 .item-service__title {
   font-weight: 400;
   font-size: 19.2px;
@@ -544,7 +534,7 @@ main {
   row-gap: 30px;
   align-items: center;
 }
-@media (max-width: 1150px) {
+@media (max-width: 1050px) {
   .marketting__container {
     flex-direction: column-reverse;
   }
@@ -589,4 +579,56 @@ main {
   width: 32px;
   height: 32px;
   background: url("../img/marketing/arrow.svg") center no-repeat;
+}
+
+.advantages {
+  padding-top: 46px;
+  padding-bottom: 92px;
+}
+.advantages__container {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 1050px) {
+  .advantages__container {
+    flex-direction: column;
+  }
+}
+.advantages__contant {
+  flex: 0 1 61%;
+}
+.advantages__items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 32px;
+}
+@media (max-width: 1050px) {
+  .advantages__items {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+}
+.advantages__item {
+  background: rgba(129, 129, 139, 0.1);
+  border-radius: 30px;
+  padding: 40px;
+}
+.advantages__image img {
+  border-radius: 0 67% 60% 60%/0 68% 50% 50%;
+  width: 100%;
+}
+.advantages__image {
+  flex: 0 1 39%;
+  overflow: hidden;
+}
+
+.item-advantages__value {
+  font-weight: 500;
+  font-size: 51.2px;
+  line-height: 120%;
+  color: #FFFFFF;
+  margin-bottom: 32px;
 }/*# sourceMappingURL=style.css.map */

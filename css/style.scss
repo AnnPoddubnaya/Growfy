@@ -648,16 +648,7 @@ main {
     line-height: 120%;
 }
 
-.text {
-    font-size: 18px;
-    line-height: 150%;
-    display: flex;
-    align-items: center;
-    color: #9C9C9C;
-    padding-top: 12px;
-    padding-bottom: 33px;
-
-}
+.text {}
 
 .button {}
 
@@ -710,7 +701,7 @@ main {
         row-gap: 30px;
         align-items: center;
 
-        @media (max-width:1150px) {
+        @media (max-width:1050px) {
             flex-direction: column-reverse;
         }
     }
@@ -770,9 +761,6 @@ main {
     }
 }
 
-.label {}
-
-.title {}
 
 .text {
     padding-top: 40px;
@@ -800,6 +788,90 @@ main {
 }
 
 //===================================//
+.page {
+
+    // .page__advantages
+
+    &__advantages {}
+}
+
+.advantages {
+    padding-top: 46px;
+    padding-bottom: 92px;
+    // .advantages__container
+
+    &__container {
+        display: flex;
+        gap: 32px;
+        align-items: center;
+        justify-content: center;
+
+        @media (max-width:1050px) {
+            flex-direction: column;
+        }
+    }
+
+    // .advantages__contant
+
+    &__contant {
+        flex: 0 1 61%;
+    }
+
+    // .advantages__items
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 32px;
+
+        @media (max-width:1050px) {
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+        }
+    }
+
+    // .advantages__item
+
+    &__item {
+        background: rgba(129, 129, 139, 0.1);
+        border-radius: 30px;
+        padding: 40px;
+    }
+
+    // .advantages__image
+
+    &__image img {
+        border-radius: 0 67% 60% 60% / 0 68% 50% 50%;
+        width: 100%;
+    }
+
+    &__image {
+        flex: 0 1 39%;
+        overflow: hidden;
+    }
+}
+
+.item-advantages {
+
+    // .item-advantages__value
+
+    &__value {
+        font-weight: 500;
+        font-size: 51.2px;
+        line-height: 120%;
+        color: #FFFFFF;
+        margin-bottom: 32px;
+    }
+
+    // .item-advantages__text
+
+    &__text {}
+}
+
+
+
+
 //===================================//
 //===================================//
 // @media (max-width:1199.98px) {
